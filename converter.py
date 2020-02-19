@@ -41,11 +41,12 @@ def bintodec():
         lst.append("0")
     lst = reversed(lst)
     count = 0
-    for i in lst:
-        print(str(int(i)),end = "")
-        count +=1
-        if count % 4 == 0:
-            print(" ",end="")
+    if ipbase != 10:
+        for i in lst:
+            print(str(int(i)),end = "")
+            count +=1
+            if count % 4 == 0:
+                print(" ",end="")
         
 bintodec()
 ##print(byteCal(1))
